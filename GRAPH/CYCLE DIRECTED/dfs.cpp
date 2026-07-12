@@ -8,7 +8,7 @@ bool dfs(unordered_map<int,vector<int>>&adj,vector<bool>&vis,vector<bool>&pathVi
         pathVis[node]=1;
         for(auto i:adj[node]){
             if(!vis[i]){
-                vis[i];
+                vis[i]=1;
                 pathVis[i]=1;
                 if(dfs(adj,vis,pathVis,i))return 1;
             }else if(vis[i] && pathVis[i])return 1;
