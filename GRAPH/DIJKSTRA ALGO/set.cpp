@@ -13,7 +13,7 @@ void bfs(unordered_map<int,vector<pair<int,int>>>&adj,vector<int>&ans,int node){
             if(ans[node]+w<ans[n]){
                 ans[n]=ans[node]+w;
                 s.insert({ans[n],n});
-            }
+            } 
         }
     }
 }
@@ -25,7 +25,7 @@ vector<int> dijkstra(int V,vector<vector<int>>&nums,int src){
         adj[u].push_back({v,w});
         adj[v].push_back({u,w});
     }
-    vector<int>ans(V,INT_MAX);
+    vector<int> ans(V,INT_MAX);
     ans[src]=0;
     bfs(adj,ans,src);
     for(int i=0;i<V;i++){
