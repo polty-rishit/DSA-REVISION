@@ -15,7 +15,8 @@ class Node{
 
 int floor(Node* root,int key){
     int maxi=-1;
-    if(root->data==key){
+    while(root){
+        if(root->data==key){
         maxi=root->data;
         return maxi;
     }
@@ -24,5 +25,6 @@ int floor(Node* root,int key){
         maxi=root->data;
         root=root->left;
     }
+}
     return maxi;
 }
