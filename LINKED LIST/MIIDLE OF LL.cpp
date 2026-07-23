@@ -24,7 +24,6 @@ Node* mid(Node *head){
     }
     return slow;
 }
-
 Node* mid(Node *head){
     Node *fast=head,*slow=head;
     while(fast && fast->next){
