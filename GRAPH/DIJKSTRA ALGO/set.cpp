@@ -15,8 +15,8 @@ void bfs(unordered_map<int,vector<pair<int,int>>>&adj,vector<int>&ans,int node){
                 s.insert({ans[n],n});
             } 
         }
-    }
-}
+     }
+} 
 
 vector<int> dijkstra(int V,vector<vector<int>>&nums,int src){
     unordered_map<int,vector<pair<int,int>>>adj;
