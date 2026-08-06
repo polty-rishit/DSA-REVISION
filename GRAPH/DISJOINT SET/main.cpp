@@ -10,7 +10,7 @@ class DisjointSet{
         size.resize(n+1,1);
         for(int i=0;i<=n;i++){
             parent[i]=i;
-        }
+        } 
     }
     
     int findPar(int node){
