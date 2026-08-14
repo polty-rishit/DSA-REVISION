@@ -15,7 +15,3 @@ bool isValid(string s){
     }
     return st.empty();
 }
-
-int main(){
-
-}
